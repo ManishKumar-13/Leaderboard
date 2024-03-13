@@ -1,0 +1,177 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body {
+    overflow-y: auto;
+}
+
+.container {
+    background: url(redBackground.jpg) no-repeat center center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    min-height: 100vh;
+    overflow-y: auto;
+    /* Enable vertical scrolling when content exceeds the height */
+    padding: 3rem; 
+    box-sizing: border-box; /* Ensure padding is included in the height calculation */
+}
+
+table {
+    width: 57%;
+    border-collapse: collapse;
+    margin-bottom: 2rem;
+    filter: brightness(1.3);
+    color: white;
+    font-size: 1.8rem;
+    background-color: rgba(0, 0, 0, 0.5);
+    font-weight: 500;
+}
+
+#heading {
+    color: rgb(255 255 255);
+    font-size: 2.5rem;
+    padding: 1.4rem;
+    font-weight: 650;
+}
+
+tr {
+    border: 3px solid #f90707;
+    vertical-align: middle;
+}
+
+
+td {
+    padding: 1.4rem;
+    text-align: center;
+}
+
+/* Target the first td element in each row */
+tr td:first-child {
+    font-size: 2.8rem;
+    font-weight: bolder;
+}
+
+/* Target the fourth td cell in each row */
+tr td:nth-child(4) {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: flex-end;
+    gap: 0.3rem;
+}
+
+table button {
+    font-size: 1.3rem;
+    background: #eb8c8c;
+    padding: 0.2rem;
+    width: 2rem;
+    border-radius: 6px;
+    border: none;
+    font-weight: 700;
+}
+
+table button .delete-icon {
+    color: white;
+    cursor: pointer;
+    color: black;
+}
+
+#addPlayer {
+    display: flex;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 55.3%;
+    padding: 0.6rem;
+    border: 3px solid #fc2020;
+}
+
+#addPlayer img {
+    width: 1.4rem;
+    height: 1.4rem;
+}
+
+#addPlayer button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    border: none;
+    font-size: 1.4rem;
+    font-weight: 650;
+    background-color: #eb8c8c;
+}
+
+.popup {
+    position: fixed;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    padding: 20px;
+    width: 500px;
+    height: 235px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.popup-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.popup-header h2 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+.close-icon {
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.popup-body {
+    margin-bottom: 10px;
+}
+
+.popup-body input {
+    width: 94%;
+    padding: 0.7rem;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1.5rem;
+    color: #554f4f;
+}
+
+.popup-body input:focus {
+    box-shadow: 0 0 5px grey;
+    outline: none;
+}
+
+.popup-body button {
+    padding: 0.6rem;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 1.5rem;
+}
+
+.popup-body button:hover {
+    background-color: #0056b3;
+}
